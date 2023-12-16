@@ -115,3 +115,45 @@ const setLetterEffect = function () {
 };
 
 window.addEventListener("load", setLetterEffect);
+
+// back to top
+
+const backTopBtn = document.querySelector("[data-back-top-btn]");
+
+window.addEventListener("scroll", function () {
+  const bodyHeight = document.body.scrollHeight;
+  const windowHeight = window.innerHeight;
+  const scrollY = window.scrollY || window.pageYOffset; // Cross-browser compatibility
+
+  const scrollPercent = (scrollY / (bodyHeight - windowHeight)) * 100;
+
+  backTopBtn.textContent = `${scrollPercent.toFixed(0)}%`;
+
+  if (scrollPercent > 5) {
+    backTopBtn.classList.add("show");
+  } else {
+    backTopBtn.classList.remove("show");
+  }
+});
+
+// Scroll Reveal
+
+const revealElements = document.querySelectorAll("[data-reveal]");
+
+const scrollReveal = function () {
+  revealElements.forEach((element) => {
+    const elementIsInScreen =
+      element.getBoundingClientRect().top < window.innerHeight / 1.15;
+
+    if (elementIsInScreen) {
+      element.classList.add("revealed");
+    } else {
+      element.classList.remove("revealed");
+    }
+  });
+};
+
+window.addEventListener("scroll", scrollReveal);
+
+// Initial check when the page loads
+scrollReveal();
