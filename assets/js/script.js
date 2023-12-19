@@ -157,3 +157,39 @@ window.addEventListener("scroll", scrollReveal);
 
 // Initial check when the page loads
 scrollReveal();
+
+// custom cursor
+const cursor = document.querySelector("[data-cursor]");
+const anchorElements = document.querySelectorAll("a");
+const buttons = document.querySelectorAll("button");
+
+// change cursorElement Position based on cursor move
+document.body.addEventListener("mousemove", (event) => {
+  setTimeout(() => {
+    cursor.style.top = `${event.clientY}px`;
+    cursor.style.left = `${event.clientX}px`;
+  }, 100);
+});
+
+// add cursor hoverd class
+const hoverActive = () => {
+  cursor.classList.add("hovered");
+};
+//  removed cursor hoverd class
+const hoverDeactive = () => {
+  cursor.classList.remove("hovered");
+};
+// add hover effect on cursor when hover any element or button
+addEventOnElement(anchorElements, "mouseover", hoverActive);
+addEventOnElement(anchorElements, "mouseout", hoverDeactive);
+addEventOnElement(buttons, "mouseover", hoverActive);
+addEventOnElement(buttons, "mouseout", hoverDeactive);
+
+// add disabled class on cursorElement, when mouse out of the body
+document.body.addEventListener("mouseout", () => {
+  cursor.classList.add("disabled");
+});
+// remove disabled class on cursorElement, when mouse in the body
+document.body.addEventListener("mouseover", () => {
+  cursor.classList.remove("disabled");
+});

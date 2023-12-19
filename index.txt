@@ -194,3 +194,19 @@ aria-label = back to top
 alt = loading
 
 alt = loading shape
+
+
+--smokey-black: hsl(0, 0%, 7%);
+--eerie-black: hsl(0, 0%, 9%);
+--radical-red: hsl(346, 100%, 58%);
+--white_a9: hsla(0, 0%, 100%, 0.09);
+--white_a15: hsla(0, 0%, 100%, 0.15);
+--white_a25: hsla(0, 0%, 100%, 0.25);
+--white_a50: hsla(0, 0%, 100%, 0.5);
+--white_a70: hsla(0, 0%, 100%, 0.7);
+--white_a75: hsla(0, 0%, 100%, 0.75);
+--white_a80: hsla(0, 0%, 100%, 0.8);
+--jet-1: hsl(0, 0%, 20%);
+--jet-2: hsl(0, 0%, 16%);
+--white: hsl(0, 0%, 100%);
+--black: hsl(0, 0%, 0%);
