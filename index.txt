@@ -196,17 +196,128 @@ alt = loading
 alt = loading shape
 
 
---smokey-black: hsl(0, 0%, 7%);
---eerie-black: hsl(0, 0%, 9%);
---radical-red: hsl(346, 100%, 58%);
---white_a9: hsla(0, 0%, 100%, 0.09);
---white_a15: hsla(0, 0%, 100%, 0.15);
---white_a25: hsla(0, 0%, 100%, 0.25);
---white_a50: hsla(0, 0%, 100%, 0.5);
---white_a70: hsla(0, 0%, 100%, 0.7);
---white_a75: hsla(0, 0%, 100%, 0.75);
---white_a80: hsla(0, 0%, 100%, 0.8);
---jet-1: hsl(0, 0%, 20%);
---jet-2: hsl(0, 0%, 16%);
---white: hsl(0, 0%, 100%);
---black: hsl(0, 0%, 0%);
+
+
+option 1  
+
+:root {
+  --smokey-black: var(--jet-1);
+  --eerie-black: var(--jet-2);
+  --radical-red: var(--imperial-red);
+  --white_a9: hsla(0, 0%, 100%, 0.09);
+  --white_a15: hsla(0, 0%, 100%, 0.15);
+  --white_a25: hsla(0, 0%, 100%, 0.25);
+  --white_a50: hsla(0, 0%, 100%, 0.5);
+  --white_a70: hsla(0, 0%, 100%, 0.7);
+  --white_a75: hsla(0, 0%, 100%, 0.75);
+  --white_a80: hsla(0, 0%, 100%, 0.8);
+  --jet-1: hsl(0, 0%, 20%);
+  --jet-2: hsl(0, 0%, 16%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+}
+
+/* Regal Hues */
+:root {
+  --regal-purple: hsl(260, 40%, 35%);
+  --royal-blue: hsl(220, 40%, 35%);
+  --majestic-green: hsl(120, 40%, 35%);
+  --imperial-red: hsl(0, 40%, 35%);
+  --ornate-gold: hsl(40, 40%, 45%);
+  --opulent-burgundy: hsl(340, 40%, 35%);
+  --sumptuous-indigo: hsl(240, 40%, 35%);
+  --plush-emerald: hsl(140, 40%, 35%);
+  --lavish-crimson: hsl(10, 40%, 35%);
+  --regal-mauve: hsl(300, 40%, 35%);
+}
+
+/* Example Usage */
+body {
+  background-color: var(--regal-purple);
+  color: var(--ornate-gold);
+}
+
+button {
+  background-color: var(--majestic-green);
+  color: var(--white);
+}
+
+a {
+  color: var(--imperial-red);
+  border-bottom: 2px solid var(--ornate-gold);
+}
+
+
+
+
+
+
+
+
+
+
+
+options 2
+
+:root {
+  --steel-gray: hsl(210, 15%, 20%);
+  --rusty-orange: hsl(30, 70%, 50%);
+  --machinery-yellow: hsl(50, 70%, 50%);
+  --concrete-gray: hsl(0, 0%, 70%);
+  --safety-yellow: hsl(50, 100%, 50%);
+  --rivet-bronze: hsl(20, 40%, 30%);
+  --pipe-blue: hsl(210, 40%, 30%);
+  --industrial-green: hsl(120, 50%, 30%);
+  --welding-orange: hsl(20, 70%, 50%);
+  --oil-stain-black: hsl(0, 0%, 10%);
+}
+
+/* Example Usage */
+body {
+  background-color: var(--steel-gray);
+  color: var(--concrete-gray);
+}
+
+button {
+  background-color: var(--machinery-yellow);
+  color: var(--oil-stain-black);
+}
+
+a {
+  color: var(--rusty-orange);
+  border-bottom: 2px solid var(--industrial-green);
+}
+
+/* Customize as needed for your design */
+
+
+option 3 '
+
+:root {
+  --elegant-beige: hsl(40, 20%, 90%);
+  --velvet-taupe: hsl(30, 15%, 70%);
+  --satin-silver: hsl(210, 15%, 80%);
+  --plush-charcoal: hsl(0, 0%, 20%);
+  --pearl-white: hsl(0, 0%, 95%);
+  --cashmere-gray: hsl(40, 10%, 60%);
+  --silk-gold: hsl(45, 60%, 65%);
+  --rich-mocha: hsl(20, 30%, 30%);
+  --suede-brown: hsl(30, 20%, 40%);
+  --crimson-rose: hsl(340, 50%, 55%);
+}
+
+/* Example Usage */
+body {
+  background-color: var(--elegant-beige);
+  color: var(--plush-charcoal);
+}
+
+button {
+  background-color: var(--satin-silver);
+  color: var(--rich-mocha);
+}
+
+a {
+  color: var(--silk-gold);
+  border-bottom: 2px solid var(--suede-brown);
+}
